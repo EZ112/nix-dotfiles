@@ -1,0 +1,84 @@
+@import url('colors.css');
+
+window#waybar{
+   all: unset;
+   color: @foreground;
+   font-size: 12px;
+}
+
+.modules-left, .modules-center, .modules-right{
+   margin: 4px;
+   padding: 0px 8px;
+   background-color: alpha(@background, 0.3);
+   border-radius: 8px;
+}
+
+#workspaces {
+   padding: 8px 0px;
+}
+
+#workspaces button{
+   font-size: 0px;
+   padding: 0px;
+   margin: 0px 8px;
+   border-radius: 10px;
+   transition: all 0.3s ease-in-out;
+   background-color: @white;
+   color: transparent;
+   min-height: 10px;
+   min-width: 10px;
+}
+#workspaces button:first-child{
+   margin-left: 0px;
+}
+
+#workspaces button:last-child{
+   margin-right: 0px;
+}
+
+#workspaces button.active{
+   background-color: @foreground;
+   min-width: 40px;
+}
+
+#cpu, #memory, #temperature{
+   margin-right: 12px;
+}
+
+#temperature{
+   padding-right: 12px;
+   border-right: 1px solid alpha(@foreground, 0.3);
+}
+
+#custom-expand{
+    padding-right: 8px;
+    color:alpha(@foreground, .3);
+}
+
+#bluetooth{
+   padding-right: 8px;
+}
+
+#network{
+   padding-right: 12px;
+}
+
+#battery{
+   padding-right: 8px;
+}
+
+#battery.warning{
+   color: @yellow;
+}
+
+#battery.critical{
+   color: @red;
+}
+
+tooltip{
+   background-color: @background;
+}
+
+tooltip label{
+   color: @foreground;
+}
