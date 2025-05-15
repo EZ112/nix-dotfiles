@@ -25,12 +25,13 @@
       ".bashrc".source = /home/ez/dotfiles/.bashrc;
 
       ".config/starship.toml".source = /home/ez/dotfiles/starship.toml;
+      ".config/ranger/rc.conf".source = /home/ez/dotfiles/ranger/rc.conf;
 
       ".config/alacritty".source = /home/ez/dotfiles/alacritty;
       ".config/hypr".source = /home/ez/dotfiles/hypr;
       ".config/neofetch".source = /home/ez/dotfiles/neofetch;
-      ".config/ranger".source = /home/ez/dotfiles/ranger;
       ".config/rofi".source = /home/ez/dotfiles/rofi;
+      ".config/wallpapers".source = /home/ez/dotfiles/wallpapers;
       ".config/waybar".source = /home/ez/dotfiles/waybar;
    };
 
