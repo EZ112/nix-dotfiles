@@ -62,6 +62,9 @@ in
      # Bar
      waybar
 
+     # Screen capture
+     hyprshot
+
      # Terminal
      alacritty
      starship
