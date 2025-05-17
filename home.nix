@@ -8,6 +8,35 @@
       EDITOR = "nvim";
    };
 
+   home.packages = with pkgs; [
+      # Bar
+      waybar
+
+      # File manager
+      ranger
+      ueberzugpp
+
+      # Font
+      font-manager
+
+      # Notification
+      dunst
+      libnotify
+
+      # Screen capture
+      hyprshot
+
+      # Terminal
+      alacritty
+
+      # Wallpaper
+      swww
+
+      # Window switcher
+      rofi-wayland
+   ];
+
+   programs.firefox.enable = true;
    programs.git = {
       enable = true;
       extraConfig = {

@@ -26,9 +26,6 @@ in
   # hint electron app to use wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # Display manager
-  # services.greetd.enable = true;
-
   # Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
@@ -49,7 +46,6 @@ in
   home-manager.users.ez = /home/ez/dotfiles/home.nix;
   home-manager.backupFileExtension = "backup";
 
-  programs.firefox.enable = true;
   programs.starship.enable = true;
 
   # List packages installed in system profile. To search, run:
@@ -59,33 +55,7 @@ in
      wget
      neofetch
      keychain
-
-     # Bar
-     waybar
-
-     # Screen capture
-     hyprshot
-
-     # Terminal
-     alacritty
      starship
-
-     # File manager
-     ranger
-     ueberzugpp
-
-     # Font
-     font-manager
-
-     # Window switcher
-     rofi-wayland
-
-     # Wallpaper
-     swww
-
-     # Notification
-     dunst
-     libnotify
   ];
 
   # Font
