@@ -58,6 +58,7 @@ in
      neovim 
      wget
      neofetch
+     keychain
 
      # Bar
      waybar
