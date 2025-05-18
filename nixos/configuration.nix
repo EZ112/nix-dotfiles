@@ -25,6 +25,14 @@ in
   };
   # hint electron app to use wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet -r -t -c Hyprland";
+      };
+    };
+  };
 
   # Bluetooth
   hardware.bluetooth.enable = true;
