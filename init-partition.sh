@@ -24,4 +24,6 @@ nixos-generate-config --root /mnt
 
 echo "partition finished"
 echo "edit /mnt/etc/nixos/configuration.nix"
-echo "then run nixos-install and reboot"
+echo "run nixos-install"
+echo "run nixos-enter --root /mnt -c 'passwd [username]'"
+echo "if went well then reboot"
