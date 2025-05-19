@@ -10,7 +10,7 @@ in
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
       (import "${home-manager}/nixos")
     ];
 
@@ -48,7 +48,6 @@ in
   users.users.ez = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; 
-     hashedPasswordFile = "/etc/nixos/secrets/ez.pass";
   };
 
   home-manager.users.ez = /home/ez/dotfiles/home.nix;
